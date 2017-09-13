@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=1.0">
+  <title>Hoja de Vida</title>
+<style >
+  table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+</head>
+<body>
+  <header>
+    <img src="imagenes\logo.svg" alt="Logo hoja de vida" width="100" height="100" />
+    <h1>Curriculum Vitae</h1>
+    <h2>Datos Personales</h2>
+    <h3>Nombre: Erwin</h3>
+    <h3>Apellidos: Obregón Meneses</h3>
+    <h3>Lugar de Nacimiento: Medellín</h3>
+    <h3>Fecha: 09/12/1978</h3>
+  </header>
+  <nav>
+    <ul>
+      <li>Inicio</li>
+      <li>Educación </li>
+      <li>Experiencia  </li>
+    </ul>
+    <p><a href="index.html">Inicio</a>|<a href="educacion.html">Educación</a>|<a href="experiencia.html">Experiencia</a></p>
+  </nav>
+  <section>
+  <h2>Educación</h2>
+  <table >
+    <thead>
+      <tr>
+        <td>Año</td>
+        <td>Institución</td>
+        <td>Lugar</td>
+        <td>Título</td>
+        <td>Cursos</td>
+        <td>¿Culminó?</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1996</td>
+        <td>Normal Superior de Medellín</td>
+        <td>Medellín</td>
+        <td>Bachiller normalista</td>
+        <td></td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2004</td>
+        <td>Politecnico Colombiano Jaime Izasa Cadavid</td>
+        <td>Medellín</td>
+        <td>Ingeniero Informático</td>
+        <td></td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2015</td>
+        <td>Cedesistemas</td>
+        <td>Medellín</td>
+        <td>Diplomado en tecnologia .net</td>
+        <td></td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2013</td>
+        <td>ISTQB</td>
+        <td>Medellín</td>
+        <td>Certified Tester Foundation level</td>
+        <td></td>
+        <td>Si</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Agregar Estudios</h2>
+  <form  action="index.html" method="post">
+    <label for="año">Año</label>
+    <select class="" name="año">
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+    </select> <br/>
+
+    <label for="institucion">Institución</label>
+    <input type="text" name="institucion" required /><br/>
+
+    <label for="lugar">Lugar</label>
+    <input type="text" name="lugar" required /><br/>
+
+    <label for="culmino">¿Culminó?</label>
+    <input type="radio" name="colmino" value="si">Si
+    <input type="radio" name="colmino" value="no">No <br/>
+
+    <label for="enviar"></label>
+    <input type="submit" name="enviar" >
+  </form>
+  </section>
+  <footer>
+    <p>Email: erwinom8@hotmail.com</p>
+    <p>Teléfono: 0575891010</p>
+    <p>Dirección: Calle 44B # 70-55 ap 401 </p>
+    <p>Facebook: http://facebook.com/erwinobregonm</p>
+  </footer>
+</body>
+</html>
